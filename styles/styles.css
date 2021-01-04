@@ -9,7 +9,7 @@ header{
     height: 5px;
 }
 .container {
-    max-width: 100%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
 }
@@ -40,6 +40,7 @@ header{
     margin:auto;
     position: relative;
     
+    
 } 
 .image{
     max-height: 100%;
@@ -49,31 +50,84 @@ header{
 }
 .centro{
     position:relative;
-    top: 42%;
-    left: 1%;
+    top: 40%;
+    left: 0%;
     transition: translate(-50%,-50);
     text-align: center;
     padding: 10px;
 }
 .entrar{
-    font-size: 30px;
-    color: white;
+    font-size: 44px;
+    color: #000000;
     text-decoration: none;
-    border: 2px solid white;
-
+    box-shadow: 5px 8px aliceblue;
+    padding: 0px 2px;
+    opacity: 0.8;
+}
+.entrar:hover{
+    opacity: 1.0;
 }
 
 .fundo2{
     position: inherit;
-    width: 100%;
-    height: 400px;
-    background-color:#F1F1F1;
-    margin:auto;
+    width: 100%;    
+    background-color:#ffe301 ;
+    margin:5px auto;
+  
 }
+h1{
+    display: block;
+    max-width: 100%;
+    text-align: center;    
+}
+.flex{
+    display:flex;
+    height: 400px;
+    justify-content: center;
+}
+.containerS{
+    display: flex;
+    width: 200px;
+    border: 5px solid #060525;
+    border-radius: 10px;   
+    height: 70%;
+
+}
+.block{
+    width: 100%;
+    background-color: #f1f1f1;
+    flex-wrap: wrap;
+}
+h2{
+    font-size: 23px;
+    text-align: center;
+}
+p{
+    font-size: 15px;
+    padding: 1px 10px;
+}
+@media (max-width: 640px){
+    .fundo{
+        height: 354px;
+    }
+    .entrar{
+        font-size: 30px;
+    }
+    .containerS{ /* Fundo 2  */ 
+        width: 134px;
+    }
+    h2{
+        font-size: 1em;
+    }
+    p{
+        font-size: 0.7em;
+    }
+}
+
 .fundo3{
     position: inherit;
     width: 100%;
     height: 400px;
-    background-color: #060525;
-    margin:auto;
+    background-color: #f1f1f1;
+    margin:auto; 
 }
